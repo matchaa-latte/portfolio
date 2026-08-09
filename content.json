@@ -1,0 +1,145 @@
+{
+  "page": {
+    "title": "Matthew Cunanan — Portfolio"
+  },
+  "nav": {
+    "brand": "Matthew Ferdinand N. Cunanan",
+    "home": "Home",
+    "skills": "Skills",
+    "education": "Education",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "intro": {
+    "firstName": "Matthew",
+    "lastName": "Cunanan"
+  },
+  "hero": {
+    "eyebrow": "Boarding now —",
+    "name": "Matthew Cunanan",
+    "text": "[Add a short one or two sentence tagline about what you do — e.g. \"A designer & developer who turns ideas into clean, memorable digital experiences.\"] Welcome to my little scrapbook of work, skills, and stories from the journey so far.",
+    "ctaPrimary": "Get in touch",
+    "ctaSecondary": "What I do",
+    "photoCaption": "that's me!"
+  },
+  "skills": {
+    "eyebrow": "Flight log",
+    "title": "My Skills & Experience",
+    "sub": "A quick look at the tools I fly with, and the routes I've taken to get here.",
+    "card1": {
+      "title": "Skills",
+      "sub": "[List your core skills below as stickers — edit freely]",
+      "item1": "Skill One",
+      "item2": "Skill Two",
+      "item3": "Skill Three",
+      "item4": "Skill Four",
+      "item5": "Skill Five",
+      "item6": "Skill Six"
+    },
+    "card2": {
+      "title": "Tools I Use",
+      "sub": "[Swap in the software / platforms you work with]",
+      "item1": "Tool A",
+      "item2": "Tool B",
+      "item3": "Tool C",
+      "item4": "Tool D"
+    }
+  },
+  "itinerary": {
+    "title": "Experience Itinerary",
+    "ticket1": {
+      "codeFrom": "2024",
+      "codeTo": "Present",
+      "jobTitle": "[Job Title] — [Company Name]",
+      "jobDesc": "[Brief description of your role and a key accomplishment or responsibility. Edit this to describe your current or most recent position.]"
+    },
+    "ticket2": {
+      "codeFrom": "2022",
+      "codeTo": "2024",
+      "jobTitle": "[Job Title] — [Company Name]",
+      "jobDesc": "[Brief description of this earlier role. Add as many \"ticket\" entries as you need for your work history.]"
+    }
+  },
+  "education": {
+    "eyebrow": "Passport stamps",
+    "title": "Education & Achievements",
+    "sub": "The stops along the way that shaped what I know today.",
+    "card1": {
+      "title": "Education"
+    },
+    "edu1": {
+      "degree": "[Degree / Program Name]",
+      "school": "[School Name] · [Year – Year]"
+    },
+    "edu2": {
+      "degree": "[Secondary School / Track]",
+      "school": "[School Name] · [Year – Year]"
+    },
+    "card2": {
+      "title": "Achievements",
+      "sub": "[Badges below — swap labels for your certifications, awards, or milestones]"
+    },
+    "badge1": "Award One",
+    "badge2": "Certification",
+    "badge3": "Milestone"
+  },
+  "services": {
+    "eyebrow": "In-flight services",
+    "title": "What I Can Do for You",
+    "sub": "A few of the ways I can help — swap these for the services or strengths you offer.",
+    "card1": {
+      "title": "[Service One]",
+      "desc": "[Describe the first thing you offer — a skill, service, or value you bring to a team or client.]"
+    },
+    "card2": {
+      "title": "[Service Two]",
+      "desc": "[Describe the second thing you offer, keeping it short and outcome-focused.]"
+    },
+    "card3": {
+      "title": "[Service Three]",
+      "desc": "[Describe the third thing you offer — feel free to add more cards if needed.]"
+    }
+  },
+  "about": {
+    "photoCaption": "on the road, 2026",
+    "eyebrow": "Journal entry",
+    "title": "A Little About Me",
+    "p1": "[Share a bit about who you are outside of work — your background, what got you started, or what drives you.]",
+    "p2": "[Add a second paragraph about your interests, hobbies, or what you're currently exploring or learning.]",
+    "p3": "[Optional third line — what you're looking for next, or an invitation for people to reach out.]",
+    "signature": "— Matthew"
+  },
+  "contact": {
+    "eyebrow": "Next destination",
+    "title": "Let's Connect",
+    "facebook": {
+      "label": "Facebook",
+      "value": "[your.username]",
+      "href": "https://facebook.com/[your.username]"
+    },
+    "email": {
+      "label": "Email",
+      "value": "your.email@example.com",
+      "href": "mailto:your.email@example.com"
+    },
+    "linkedin": {
+      "label": "LinkedIn",
+      "value": "[your-username]",
+      "href": "https://linkedin.com/in/[your-username]"
+    },
+    "phone": {
+      "label": "Phone",
+      "value": "[+63 900 000 0000]",
+      "href": "tel:+639000000000"
+    },
+    "address": {
+      "label": "Address",
+      "value": "[City, Province, Philippines]"
+    }
+  },
+  "footer": {
+    "script": "Thanks for visiting!",
+    "copyright": "© 2026 Matthew Cunanan. All rights reserved."
+  }
+}
