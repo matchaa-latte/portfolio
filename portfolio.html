@@ -617,136 +617,64 @@
     position:relative;
   }
 
-  /* ---- SKILLS & EXPERIENCE ---- */
+  /* ---- SKILLS ---- */
   .skills-grid{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
+    grid-template-columns:repeat(3,1fr);
+    gap:32px 26px;
+    margin-top:8px;
   }
-  .skill-card{
-    transform:rotate(-1deg);
+  .skill-ticket{
+    padding:34px 24px 26px;
+    text-align:left;
   }
-  .skill-card:nth-child(2){ transform:rotate(1deg); }
-  .sticker-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:18px;
-  }
-  .sticker{
-    background:var(--blue-soft);
-    border:1px solid var(--blue-mid);
-    color:var(--ink);
-    padding:8px 16px;
-    border-radius:20px;
-    font-size:0.85rem;
-    font-weight:600;
-  }
-
-  .itinerary{
-    margin-top:18px;
-    display:flex;
-    flex-direction:column;
-    gap:22px;
-  }
-  .ticket{
-    display:grid;
-    grid-template-columns:auto 1fr auto;
-    align-items:center;
-    gap:18px;
-    border:2px dashed var(--blue-mid);
-    border-radius:10px;
-    padding:16px 18px;
-    position:relative;
-  }
-  .ticket .leg{
-    text-align:center;
-  }
-  .ticket .leg .code{
-    font-family:'Caveat', cursive;
-    font-size:1.6rem;
-    color:var(--blue-navy);
-    font-weight:700;
-  }
-  .ticket .leg .date{
-    font-size:0.72rem;
-    color:var(--ink-soft);
-    text-transform:uppercase;
-    letter-spacing:1px;
-  }
-  .ticket .path{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-  }
-  .ticket .path svg{ width:28px; margin-bottom:4px; }
-  .ticket .path .dashline{
-    width:100%;
-    border-top:2px dashed var(--blue-mid);
-  }
-  .ticket-info{
-    grid-column:1 / -1;
-    border-top:1px dashed var(--blue-mid);
-    padding-top:10px;
-    margin-top:4px;
-  }
-  .ticket-info strong{ color:var(--ink); }
-  .ticket-info p{ margin:4px 0 0; color:var(--ink-soft); font-size:0.92rem; line-height:1.5;}
-
-  /* ---- EDUCATION ---- */
-  .edu-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:30px;
-  }
-  .postcard{
-    transform:rotate(1deg);
-    border:1px solid var(--blue-mid);
-  }
-  .postcard:nth-child(2){ transform:rotate(-1deg); }
-  .edu-item{
-    display:flex;
-    gap:16px;
-    padding:14px 0;
-    border-bottom:1px dashed var(--blue-mid);
-  }
-  .edu-item:last-child{ border-bottom:none; }
-  .edu-icon{
-    width:42px; height:42px;
-    flex:none;
-    border-radius:50%;
-    background:var(--blue-soft);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-  }
-  .edu-icon svg{ width:22px; height:22px; color:var(--blue-navy); }
-  .edu-item h4{ font-size:1rem; margin-bottom:2px; }
-  .edu-item p{ margin:0; color:var(--ink-soft); font-size:0.88rem; line-height:1.5;}
-
-  .badge-row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:16px;
-    margin-top:16px;
-  }
-  .badge{
-    width:100px;
-    text-align:center;
-  }
-  .badge .circle{
-    width:74px; height:74px;
+  .skill-ticket:nth-child(1){ transform:rotate(-1.2deg); }
+  .skill-ticket:nth-child(2){ transform:rotate(0.8deg); }
+  .skill-ticket:nth-child(3){ transform:rotate(-0.6deg); }
+  .skill-ticket:nth-child(4){ transform:rotate(1deg); }
+  .skill-ticket:nth-child(5){ transform:rotate(-0.9deg); }
+  .skill-ticket:nth-child(6){ transform:rotate(0.6deg); }
+  .skill-ticket-index{
+    position:absolute;
+    top:-16px;
+    left:26px;
+    width:36px; height:36px;
     border-radius:50%;
     background:radial-gradient(circle at 35% 30%, var(--blue-mid), var(--blue-navy));
+    color:var(--white);
     display:flex;
     align-items:center;
     justify-content:center;
-    margin:0 auto 8px;
+    font-family:'Caveat', cursive;
+    font-weight:700;
+    font-size:1.15rem;
     box-shadow:0 6px 14px rgba(29,53,87,0.25);
     border:3px solid var(--white);
   }
-  .badge .circle svg{ width:30px; height:30px; color:var(--white); }
-  .badge span{ font-size:0.76rem; font-weight:700; color:var(--ink-soft); line-height:1.3; }
+  .skill-ticket-plane{
+    width:24px;
+    margin-bottom:16px;
+    opacity:0.8;
+    transform:rotate(45deg);
+  }
+  .skill-ticket-plane svg{ width:100%; height:auto; display:block; }
+  .skill-ticket h3{ font-size:1.1rem; margin-bottom:8px; }
+  .skill-ticket p{ color:var(--ink-soft); font-size:0.88rem; line-height:1.6; margin:0; }
+  .skill-ticket-dash{
+    margin-top:18px;
+    border-top:2px dashed var(--blue-mid);
+  }
+
+  /* ---- EDUCATION ---- */
+  .edu-single{
+    padding:44px 46px;
+  }
+  .edu-single p{
+    color:var(--ink-soft);
+    font-size:1rem;
+    line-height:1.85;
+    margin:0;
+  }
 
   /* ---- SERVICES ---- */
   .services-grid{
@@ -761,43 +689,11 @@
   .service-card:nth-child(1){ transform:rotate(-1.4deg); }
   .service-card:nth-child(2){ transform:rotate(1deg); }
   .service-card:nth-child(3){ transform:rotate(-0.6deg); }
-  .service-icon{
-    width:52px; height:52px;
-    border-radius:12px;
-    background:var(--blue-navy);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin-bottom:16px;
-  }
-  .service-icon svg{ width:26px; height:26px; color:var(--white); }
+  .service-card:nth-child(4){ transform:rotate(0.9deg); }
+  .service-card:nth-child(5){ transform:rotate(-1deg); }
+  .service-card:nth-child(6){ transform:rotate(0.7deg); }
   .service-card h3{ font-size:1.15rem; margin-bottom:8px; }
   .service-card p{ color:var(--ink-soft); font-size:0.9rem; line-height:1.6; margin:0;}
-
-  /* ---- ABOUT ---- */
-  #about{
-    display:grid;
-    grid-template-columns:0.8fr 1.2fr;
-    gap:40px;
-    align-items:center;
-  }
-  .about-photo{
-    position:relative;
-  }
-  .about-photo .polaroid{ width:100%; transform:rotate(-2deg); position:relative; }
-  .journal{
-    transform:rotate(0.6deg);
-  }
-  .journal p{
-    color:var(--ink-soft);
-    line-height:1.8;
-    margin-bottom:14px;
-  }
-  .journal p:last-child{ margin-bottom:0; }
-  .signature{
-    font-family:'Caveat', cursive;
-    font-size:2rem;
-    color:var(--blue-navy);
     margin-top:18px;
   }
 
@@ -902,11 +798,13 @@
   @media (max-width: 880px){
     #home{ grid-template-columns:1fr; }
     .hero-visual{ height:340px; order:-1; }
-    .skills-grid, .edu-grid{ grid-template-columns:1fr; }
+    .skills-grid{ grid-template-columns:1fr; }
     .services-grid{ grid-template-columns:1fr; }
-    #about{ grid-template-columns:1fr; }
-    .ticket{ grid-template-columns:1fr; text-align:center; }
-    .ticket .path{ transform:rotate(90deg); margin:6px auto; width:28px; }
+  }
+
+  @media (max-width: 1080px) and (min-width: 881px){
+    .skills-grid{ grid-template-columns:1fr 1fr; }
+    .services-grid{ grid-template-columns:1fr 1fr; }
   }
 
   /* ============ SCRAPBOOK SCROLL-IN ============ */
@@ -1477,7 +1375,6 @@
           <li><a href="#skills" data-edit="nav.skills">Skills</a></li>
           <li><a href="#education" data-edit="nav.education">Education</a></li>
           <li><a href="#services" data-edit="nav.services">Services</a></li>
-          <li><a href="#about" data-edit="nav.about">About</a></li>
           <li><a href="#contact" data-edit="nav.contact">Contact</a></li>
         </ul>
         <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
@@ -1524,84 +1421,59 @@
     </div>
   </section>
 
-  <!-- SKILLS & EXPERIENCE -->
+  <!-- SKILLS -->
   <section id="skills">
     <div class="eyebrow" data-edit="skills.eyebrow">Flight log</div>
-    <h2 class="section-title" data-edit="skills.title">My Skills &amp; Experience</h2>
-    <p class="section-sub" data-edit="skills.sub">A quick look at the tools I fly with, and the routes I've taken to get here.</p>
+    <h2 class="section-title" data-edit="skills.title">Skills</h2>
+    <p class="section-sub" data-edit="skills.sub">A quick look at what I bring to the table — skills I've picked up along the way.</p>
 
     <div class="skills-grid">
-      <div class="page-card skill-card">
-        <div class="tape" style="top:-14px; left:30px;"></div>
-        <h3 data-edit="skills.card1.title">Skills</h3>
-        <p style="color:var(--ink-soft); font-size:0.9rem; margin-top:6px;" data-edit="skills.card1.sub">
-          [List your core skills below as stickers — edit freely]
-        </p>
-        <div class="sticker-row">
-          <span class="sticker" data-edit="skills.card1.item1">Skill One</span>
-          <span class="sticker" data-edit="skills.card1.item2">Skill Two</span>
-          <span class="sticker" data-edit="skills.card1.item3">Skill Three</span>
-          <span class="sticker" data-edit="skills.card1.item4">Skill Four</span>
-          <span class="sticker" data-edit="skills.card1.item5">Skill Five</span>
-          <span class="sticker" data-edit="skills.card1.item6">Skill Six</span>
-        </div>
+      <div class="page-card skill-ticket">
+        <div class="skill-ticket-index">01</div>
+        <div class="skill-ticket-plane"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="M100,8 C104,8 108,20 106,46 L106,70 L189,112 L189,124 L108,101 L108,150 L135,169 L135,179 L100,172 L65,179 L65,169 L92,150 L92,101 L11,124 L11,112 L94,70 L94,46 C92,20 96,8 100,8 Z" fill="#4f8ec9"/><ellipse cx="58" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(-28 58 103)"/><ellipse cx="142" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(28 142 103)"/></svg></div>
+        <h3 data-edit="skills.item1.title">[Skill One]</h3>
+        <p data-edit="skills.item1.desc">[Describe this skill — what it is and how you use it.]</p>
+        <div class="skill-ticket-dash"></div>
       </div>
 
-      <div class="page-card skill-card">
-        <div class="tape navy" style="top:-14px; right:30px; left:auto;"></div>
-        <h3 data-edit="skills.card2.title">Tools I Use</h3>
-        <p style="color:var(--ink-soft); font-size:0.9rem; margin-top:6px;" data-edit="skills.card2.sub">
-          [Swap in the software / platforms you work with]
-        </p>
-        <div class="sticker-row">
-          <span class="sticker" data-edit="skills.card2.item1">Tool A</span>
-          <span class="sticker" data-edit="skills.card2.item2">Tool B</span>
-          <span class="sticker" data-edit="skills.card2.item3">Tool C</span>
-          <span class="sticker" data-edit="skills.card2.item4">Tool D</span>
-        </div>
+      <div class="page-card skill-ticket">
+        <div class="skill-ticket-index">02</div>
+        <div class="skill-ticket-plane"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="M100,8 C104,8 108,20 106,46 L106,70 L189,112 L189,124 L108,101 L108,150 L135,169 L135,179 L100,172 L65,179 L65,169 L92,150 L92,101 L11,124 L11,112 L94,70 L94,46 C92,20 96,8 100,8 Z" fill="#4f8ec9"/><ellipse cx="58" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(-28 58 103)"/><ellipse cx="142" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(28 142 103)"/></svg></div>
+        <h3 data-edit="skills.item2.title">[Skill Two]</h3>
+        <p data-edit="skills.item2.desc">[Describe this skill — what it is and how you use it.]</p>
+        <div class="skill-ticket-dash"></div>
       </div>
-    </div>
 
-    <div class="page-card" style="margin-top:30px;">
-      <h3 data-edit="itinerary.title">Experience Itinerary</h3>
-      <div class="itinerary">
-        <div class="ticket">
-          <div class="leg">
-            <div class="code" data-edit="itinerary.ticket1.codeFrom">2024</div>
-            <div class="date">Departed</div>
-          </div>
-          <div class="path">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(90deg)"><path d="M100,8 C104,8 108,20 106,46 L106,70 L189,112 L189,124 L108,101 L108,150 L135,169 L135,179 L100,172 L65,179 L65,169 L92,150 L92,101 L11,124 L11,112 L94,70 L94,46 C92,20 96,8 100,8 Z" fill="#4f8ec9"/><ellipse cx="58" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(-28 58 103)"/><ellipse cx="142" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(28 142 103)"/></svg>
-            <div class="dashline"></div>
-          </div>
-          <div class="leg">
-            <div class="code" data-edit="itinerary.ticket1.codeTo">Present</div>
-            <div class="date">Arriving</div>
-          </div>
-          <div class="ticket-info">
-            <strong data-edit="itinerary.ticket1.jobTitle">[Job Title] — [Company Name]</strong>
-            <p data-edit="itinerary.ticket1.jobDesc">[Brief description of your role and a key accomplishment or responsibility. Edit this to describe your current or most recent position.]</p>
-          </div>
-        </div>
+      <div class="page-card skill-ticket">
+        <div class="skill-ticket-index">03</div>
+        <div class="skill-ticket-plane"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="M100,8 C104,8 108,20 106,46 L106,70 L189,112 L189,124 L108,101 L108,150 L135,169 L135,179 L100,172 L65,179 L65,169 L92,150 L92,101 L11,124 L11,112 L94,70 L94,46 C92,20 96,8 100,8 Z" fill="#4f8ec9"/><ellipse cx="58" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(-28 58 103)"/><ellipse cx="142" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(28 142 103)"/></svg></div>
+        <h3 data-edit="skills.item3.title">[Skill Three]</h3>
+        <p data-edit="skills.item3.desc">[Describe this skill — what it is and how you use it.]</p>
+        <div class="skill-ticket-dash"></div>
+      </div>
 
-        <div class="ticket">
-          <div class="leg">
-            <div class="code" data-edit="itinerary.ticket2.codeFrom">2022</div>
-            <div class="date">Departed</div>
-          </div>
-          <div class="path">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(90deg)"><path d="M100,8 C104,8 108,20 106,46 L106,70 L189,112 L189,124 L108,101 L108,150 L135,169 L135,179 L100,172 L65,179 L65,169 L92,150 L92,101 L11,124 L11,112 L94,70 L94,46 C92,20 96,8 100,8 Z" fill="#4f8ec9"/><ellipse cx="58" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(-28 58 103)"/><ellipse cx="142" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(28 142 103)"/></svg>
-            <div class="dashline"></div>
-          </div>
-          <div class="leg">
-            <div class="code" data-edit="itinerary.ticket2.codeTo">2024</div>
-            <div class="date">Arrived</div>
-          </div>
-          <div class="ticket-info">
-            <strong data-edit="itinerary.ticket2.jobTitle">[Job Title] — [Company Name]</strong>
-            <p data-edit="itinerary.ticket2.jobDesc">[Brief description of this earlier role. Add as many "ticket" entries as you need for your work history.]</p>
-          </div>
-        </div>
+      <div class="page-card skill-ticket">
+        <div class="skill-ticket-index">04</div>
+        <div class="skill-ticket-plane"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="M100,8 C104,8 108,20 106,46 L106,70 L189,112 L189,124 L108,101 L108,150 L135,169 L135,179 L100,172 L65,179 L65,169 L92,150 L92,101 L11,124 L11,112 L94,70 L94,46 C92,20 96,8 100,8 Z" fill="#4f8ec9"/><ellipse cx="58" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(-28 58 103)"/><ellipse cx="142" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(28 142 103)"/></svg></div>
+        <h3 data-edit="skills.item4.title">[Skill Four]</h3>
+        <p data-edit="skills.item4.desc">[Describe this skill — what it is and how you use it.]</p>
+        <div class="skill-ticket-dash"></div>
+      </div>
+
+      <div class="page-card skill-ticket">
+        <div class="skill-ticket-index">05</div>
+        <div class="skill-ticket-plane"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="M100,8 C104,8 108,20 106,46 L106,70 L189,112 L189,124 L108,101 L108,150 L135,169 L135,179 L100,172 L65,179 L65,169 L92,150 L92,101 L11,124 L11,112 L94,70 L94,46 C92,20 96,8 100,8 Z" fill="#4f8ec9"/><ellipse cx="58" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(-28 58 103)"/><ellipse cx="142" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(28 142 103)"/></svg></div>
+        <h3 data-edit="skills.item5.title">[Skill Five]</h3>
+        <p data-edit="skills.item5.desc">[Describe this skill — what it is and how you use it.]</p>
+        <div class="skill-ticket-dash"></div>
+      </div>
+
+      <div class="page-card skill-ticket">
+        <div class="skill-ticket-index">06</div>
+        <div class="skill-ticket-plane"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path d="M100,8 C104,8 108,20 106,46 L106,70 L189,112 L189,124 L108,101 L108,150 L135,169 L135,179 L100,172 L65,179 L65,169 L92,150 L92,101 L11,124 L11,112 L94,70 L94,46 C92,20 96,8 100,8 Z" fill="#4f8ec9"/><ellipse cx="58" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(-28 58 103)"/><ellipse cx="142" cy="103" rx="11" ry="5" fill="#4f8ec9" transform="rotate(28 142 103)"/></svg></div>
+        <h3 data-edit="skills.item6.title">[Skill Six]</h3>
+        <p data-edit="skills.item6.desc">[Describe this skill — what it is and how you use it.]</p>
+        <div class="skill-ticket-dash"></div>
       </div>
     </div>
   </section>
@@ -1612,55 +1484,9 @@
     <h2 class="section-title" data-edit="education.title">Education &amp; Achievements</h2>
     <p class="section-sub" data-edit="education.sub">The stops along the way that shaped what I know today.</p>
 
-    <div class="edu-grid">
-      <div class="page-card postcard">
-        <h3 data-edit="education.card1.title">Education</h3>
-        <div class="edu-item">
-          <div class="edu-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>
-          </div>
-          <div>
-            <h4 data-edit="education.edu1.degree">[Degree / Program Name]</h4>
-            <p data-edit="education.edu1.school">[School Name] · [Year – Year]</p>
-          </div>
-        </div>
-        <div class="edu-item">
-          <div class="edu-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg>
-          </div>
-          <div>
-            <h4 data-edit="education.edu2.degree">[Secondary School / Track]</h4>
-            <p data-edit="education.edu2.school">[School Name] · [Year – Year]</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="page-card postcard">
-        <h3 data-edit="education.card2.title">Achievements</h3>
-        <p style="color:var(--ink-soft); font-size:0.9rem; margin-top:6px;" data-edit="education.card2.sub">
-          [Badges below — swap labels for your certifications, awards, or milestones]
-        </p>
-        <div class="badge-row">
-          <div class="badge">
-            <div class="circle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 2l2.9 6 6.6.6-5 4.4 1.5 6.4-6-3.6-6 3.6 1.5-6.4-5-4.4 6.6-.6z"/></svg>
-            </div>
-            <span data-edit="education.badge1">Award One</span>
-          </div>
-          <div class="badge">
-            <div class="circle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 15a6 6 0 100-12 6 6 0 000 12z"/><path d="M8.2 13.5L7 22l5-3 5 3-1.2-8.5"/></svg>
-            </div>
-            <span data-edit="education.badge2">Certification</span>
-          </div>
-          <div class="badge">
-            <div class="circle">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M3 21h18M6 21V9l6-6 6 6v12M9 21v-6h6v6"/></svg>
-            </div>
-            <span data-edit="education.badge3">Milestone</span>
-          </div>
-        </div>
-      </div>
+    <div class="page-card edu-single">
+      <div class="tape navy" style="top:-14px; left:40px;"></div>
+      <p data-edit="education.paragraph">[Write one paragraph covering your education background — degrees, schools, certifications, awards, and milestones. This single box is designed to hold your whole story in one place, so feel free to keep it flowing rather than breaking it into a list.]</p>
     </div>
   </section>
 
@@ -1673,50 +1499,34 @@
     <div class="services-grid">
       <div class="page-card service-card">
         <div class="tape" style="top:-14px; left:24px;"></div>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 20l9-16H3l9 16z"/><path d="M12 20V4"/></svg>
-        </div>
         <h3 data-edit="services.card1.title">[Service One]</h3>
         <p data-edit="services.card1.desc">[Describe the first thing you offer — a skill, service, or value you bring to a team or client.]</p>
       </div>
       <div class="page-card service-card">
         <div class="tape navy" style="top:-14px; left:24px;"></div>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg>
-        </div>
         <h3 data-edit="services.card2.title">[Service Two]</h3>
         <p data-edit="services.card2.desc">[Describe the second thing you offer, keeping it short and outcome-focused.]</p>
       </div>
       <div class="page-card service-card">
         <div class="tape" style="top:-14px; left:24px;"></div>
-        <div class="service-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7z"/><circle cx="12" cy="9" r="2.4"/></svg>
-        </div>
         <h3 data-edit="services.card3.title">[Service Three]</h3>
-        <p data-edit="services.card3.desc">[Describe the third thing you offer — feel free to add more cards if needed.]</p>
+        <p data-edit="services.card3.desc">[Describe the third thing you offer.]</p>
       </div>
-    </div>
-  </section>
-
-  <!-- A LITTLE ABOUT ME -->
-  <section id="about">
-    <div class="about-photo">
-      <figure class="polaroid">
-        <div class="frame">
-          <svg class="frame-placeholder" viewBox="0 0 24 24" fill="none" stroke="#1d3557" stroke-width="1.4"><circle cx="12" cy="8" r="3.4"/><path d="M4 20c0-4 3.6-6.5 8-6.5s8 2.5 8 6.5"/></svg>
-          <img class="frame-photo" data-edit-img="about.photo" alt="">
-        </div>
-        <figcaption data-edit="about.photoCaption">on the road, 2026</figcaption>
-      </figure>
-    </div>
-    <div class="page-card journal">
-      <div class="tape navy" style="top:-14px; right:36px; left:auto;"></div>
-      <div class="eyebrow" data-edit="about.eyebrow">Journal entry</div>
-      <h2 class="section-title" style="margin-bottom:18px;" data-edit="about.title">A Little About Me</h2>
-      <p data-edit="about.p1">[Share a bit about who you are outside of work — your background, what got you started, or what drives you.]</p>
-      <p data-edit="about.p2">[Add a second paragraph about your interests, hobbies, or what you're currently exploring or learning.]</p>
-      <p data-edit="about.p3">[Optional third line — what you're looking for next, or an invitation for people to reach out.]</p>
-      <div class="signature" data-edit="about.signature">— Matthew</div>
+      <div class="page-card service-card">
+        <div class="tape navy" style="top:-14px; left:24px;"></div>
+        <h3 data-edit="services.card4.title">[Service Four]</h3>
+        <p data-edit="services.card4.desc">[Describe the fourth thing you offer.]</p>
+      </div>
+      <div class="page-card service-card">
+        <div class="tape" style="top:-14px; left:24px;"></div>
+        <h3 data-edit="services.card5.title">[Service Five]</h3>
+        <p data-edit="services.card5.desc">[Describe the fifth thing you offer.]</p>
+      </div>
+      <div class="page-card service-card">
+        <div class="tape navy" style="top:-14px; left:24px;"></div>
+        <h3 data-edit="services.card6.title">[Service Six]</h3>
+        <p data-edit="services.card6.desc">[Describe the sixth thing you offer — feel free to add more cards if needed.]</p>
+      </div>
     </div>
   </section>
 
@@ -2133,7 +1943,6 @@
       { key: "nav.skills", label: "Nav link — Skills", type: "text" },
       { key: "nav.education", label: "Nav link — Education", type: "text" },
       { key: "nav.services", label: "Nav link — Services", type: "text" },
-      { key: "nav.about", label: "Nav link — About", type: "text" },
       { key: "nav.contact", label: "Nav link — Contact", type: "text" }
     ]},
     { group: "Intro Screen (the big name reveal)", fields: [
@@ -2152,46 +1961,24 @@
       { key: "skills.eyebrow", label: "Eyebrow text", type: "text" },
       { key: "skills.title", label: "Section title", type: "text" },
       { key: "skills.sub", label: "Section subtitle", type: "textarea" },
-      { key: "skills.card1.title", label: "Card 1 title", type: "text" },
-      { key: "skills.card1.sub", label: "Card 1 subtitle", type: "textarea" },
-      { key: "skills.card1.item1", label: "Card 1 — sticker 1", type: "text" },
-      { key: "skills.card1.item2", label: "Card 1 — sticker 2", type: "text" },
-      { key: "skills.card1.item3", label: "Card 1 — sticker 3", type: "text" },
-      { key: "skills.card1.item4", label: "Card 1 — sticker 4", type: "text" },
-      { key: "skills.card1.item5", label: "Card 1 — sticker 5", type: "text" },
-      { key: "skills.card1.item6", label: "Card 1 — sticker 6", type: "text" },
-      { key: "skills.card2.title", label: "Card 2 title", type: "text" },
-      { key: "skills.card2.sub", label: "Card 2 subtitle", type: "textarea" },
-      { key: "skills.card2.item1", label: "Card 2 — sticker 1", type: "text" },
-      { key: "skills.card2.item2", label: "Card 2 — sticker 2", type: "text" },
-      { key: "skills.card2.item3", label: "Card 2 — sticker 3", type: "text" },
-      { key: "skills.card2.item4", label: "Card 2 — sticker 4", type: "text" }
-    ]},
-    { group: "Experience Itinerary", fields: [
-      { key: "itinerary.title", label: "Card title", type: "text" },
-      { key: "itinerary.ticket1.codeFrom", label: "Ticket 1 — from", type: "text" },
-      { key: "itinerary.ticket1.codeTo", label: "Ticket 1 — to", type: "text" },
-      { key: "itinerary.ticket1.jobTitle", label: "Ticket 1 — job title / company", type: "text" },
-      { key: "itinerary.ticket1.jobDesc", label: "Ticket 1 — description", type: "textarea" },
-      { key: "itinerary.ticket2.codeFrom", label: "Ticket 2 — from", type: "text" },
-      { key: "itinerary.ticket2.codeTo", label: "Ticket 2 — to", type: "text" },
-      { key: "itinerary.ticket2.jobTitle", label: "Ticket 2 — job title / company", type: "text" },
-      { key: "itinerary.ticket2.jobDesc", label: "Ticket 2 — description", type: "textarea" }
+      { key: "skills.item1.title", label: "Skill 1 — title", type: "text" },
+      { key: "skills.item1.desc", label: "Skill 1 — description", type: "textarea" },
+      { key: "skills.item2.title", label: "Skill 2 — title", type: "text" },
+      { key: "skills.item2.desc", label: "Skill 2 — description", type: "textarea" },
+      { key: "skills.item3.title", label: "Skill 3 — title", type: "text" },
+      { key: "skills.item3.desc", label: "Skill 3 — description", type: "textarea" },
+      { key: "skills.item4.title", label: "Skill 4 — title", type: "text" },
+      { key: "skills.item4.desc", label: "Skill 4 — description", type: "textarea" },
+      { key: "skills.item5.title", label: "Skill 5 — title", type: "text" },
+      { key: "skills.item5.desc", label: "Skill 5 — description", type: "textarea" },
+      { key: "skills.item6.title", label: "Skill 6 — title", type: "text" },
+      { key: "skills.item6.desc", label: "Skill 6 — description", type: "textarea" }
     ]},
     { group: "Education & Achievements", fields: [
       { key: "education.eyebrow", label: "Eyebrow text", type: "text" },
       { key: "education.title", label: "Section title", type: "text" },
       { key: "education.sub", label: "Section subtitle", type: "textarea" },
-      { key: "education.card1.title", label: "Education card title", type: "text" },
-      { key: "education.edu1.degree", label: "Degree / program 1", type: "text" },
-      { key: "education.edu1.school", label: "School / years 1", type: "text" },
-      { key: "education.edu2.degree", label: "Degree / program 2", type: "text" },
-      { key: "education.edu2.school", label: "School / years 2", type: "text" },
-      { key: "education.card2.title", label: "Achievements card title", type: "text" },
-      { key: "education.card2.sub", label: "Achievements subtitle", type: "textarea" },
-      { key: "education.badge1", label: "Badge 1 label", type: "text" },
-      { key: "education.badge2", label: "Badge 2 label", type: "text" },
-      { key: "education.badge3", label: "Badge 3 label", type: "text" }
+      { key: "education.paragraph", label: "Education & achievements paragraph", type: "textarea" }
     ]},
     { group: "Services", fields: [
       { key: "services.eyebrow", label: "Eyebrow text", type: "text" },
@@ -2202,16 +1989,13 @@
       { key: "services.card2.title", label: "Service 2 title", type: "text" },
       { key: "services.card2.desc", label: "Service 2 description", type: "textarea" },
       { key: "services.card3.title", label: "Service 3 title", type: "text" },
-      { key: "services.card3.desc", label: "Service 3 description", type: "textarea" }
-    ]},
-    { group: "About", fields: [
-      { key: "about.photoCaption", label: "Photo caption", type: "text" },
-      { key: "about.eyebrow", label: "Eyebrow text", type: "text" },
-      { key: "about.title", label: "Section title", type: "text" },
-      { key: "about.p1", label: "Paragraph 1", type: "textarea" },
-      { key: "about.p2", label: "Paragraph 2", type: "textarea" },
-      { key: "about.p3", label: "Paragraph 3", type: "textarea" },
-      { key: "about.signature", label: "Signature", type: "text" }
+      { key: "services.card3.desc", label: "Service 3 description", type: "textarea" },
+      { key: "services.card4.title", label: "Service 4 title", type: "text" },
+      { key: "services.card4.desc", label: "Service 4 description", type: "textarea" },
+      { key: "services.card5.title", label: "Service 5 title", type: "text" },
+      { key: "services.card5.desc", label: "Service 5 description", type: "textarea" },
+      { key: "services.card6.title", label: "Service 6 title", type: "text" },
+      { key: "services.card6.desc", label: "Service 6 description", type: "textarea" }
     ]},
     { group: "Contact", fields: [
       { key: "contact.eyebrow", label: "Eyebrow text", type: "text" },
@@ -2243,7 +2027,7 @@
   ========================================================================= */
   var DEFAULTS = {
     page: { title: "Matthew Cunanan — Portfolio" },
-    nav: { brand: "Matthew Cunanan", home: "Home", skills: "Skills", education: "Education", services: "Services", about: "About", contact: "Contact" },
+    nav: { brand: "Matthew Cunanan", home: "Home", skills: "Skills", education: "Education", services: "Services", contact: "Contact" },
     intro: { firstName: "Matthew", lastName: "Cunanan" },
     hero: {
       eyebrow: "Boarding now —",
@@ -2252,42 +2036,29 @@
       ctaPrimary: "Get in touch", ctaSecondary: "What I do", photoCaption: "that's me!"
     },
     skills: {
-      eyebrow: "Flight log", title: "My Skills & Experience",
-      sub: "A quick look at the tools I fly with, and the routes I've taken to get here.",
-      card1: { title: "Skills", sub: "[List your core skills below as stickers — edit freely]",
-        item1: "Skill One", item2: "Skill Two", item3: "Skill Three", item4: "Skill Four", item5: "Skill Five", item6: "Skill Six" },
-      card2: { title: "Tools I Use", sub: "[Swap in the software / platforms you work with]",
-        item1: "Tool A", item2: "Tool B", item3: "Tool C", item4: "Tool D" }
-    },
-    itinerary: {
-      title: "Experience Itinerary",
-      ticket1: { codeFrom: "2024", codeTo: "Present", jobTitle: "[Job Title] — [Company Name]",
-        jobDesc: "[Brief description of your role and a key accomplishment or responsibility. Edit this to describe your current or most recent position.]" },
-      ticket2: { codeFrom: "2022", codeTo: "2024", jobTitle: "[Job Title] — [Company Name]",
-        jobDesc: "[Brief description of this earlier role. Add as many \"ticket\" entries as you need for your work history.]" }
+      eyebrow: "Flight log", title: "Skills",
+      sub: "A quick look at what I bring to the table — skills I've picked up along the way.",
+      item1: { title: "[Skill One]", desc: "[Describe this skill — what it is and how you use it.]" },
+      item2: { title: "[Skill Two]", desc: "[Describe this skill — what it is and how you use it.]" },
+      item3: { title: "[Skill Three]", desc: "[Describe this skill — what it is and how you use it.]" },
+      item4: { title: "[Skill Four]", desc: "[Describe this skill — what it is and how you use it.]" },
+      item5: { title: "[Skill Five]", desc: "[Describe this skill — what it is and how you use it.]" },
+      item6: { title: "[Skill Six]", desc: "[Describe this skill — what it is and how you use it.]" }
     },
     education: {
       eyebrow: "Passport stamps", title: "Education & Achievements",
       sub: "The stops along the way that shaped what I know today.",
-      card1: { title: "Education" },
-      edu1: { degree: "[Degree / Program Name]", school: "[School Name] · [Year – Year]" },
-      edu2: { degree: "[Secondary School / Track]", school: "[School Name] · [Year – Year]" },
-      card2: { title: "Achievements", sub: "[Badges below — swap labels for your certifications, awards, or milestones]" },
-      badge1: "Award One", badge2: "Certification", badge3: "Milestone"
+      paragraph: "[Write one paragraph covering your education background — degrees, schools, certifications, awards, and milestones. This single box is designed to hold your whole story in one place, so feel free to keep it flowing rather than breaking it into a list.]"
     },
     services: {
       eyebrow: "In-flight services", title: "What I Can Do for You",
       sub: "A few of the ways I can help — swap these for the services or strengths you offer.",
       card1: { title: "[Service One]", desc: "[Describe the first thing you offer — a skill, service, or value you bring to a team or client.]" },
       card2: { title: "[Service Two]", desc: "[Describe the second thing you offer, keeping it short and outcome-focused.]" },
-      card3: { title: "[Service Three]", desc: "[Describe the third thing you offer — feel free to add more cards if needed.]" }
-    },
-    about: {
-      photoCaption: "on the road, 2026", eyebrow: "Journal entry", title: "A Little About Me",
-      p1: "[Share a bit about who you are outside of work — your background, what got you started, or what drives you.]",
-      p2: "[Add a second paragraph about your interests, hobbies, or what you're currently exploring or learning.]",
-      p3: "[Optional third line — what you're looking for next, or an invitation for people to reach out.]",
-      signature: "— Matthew"
+      card3: { title: "[Service Three]", desc: "[Describe the third thing you offer.]" },
+      card4: { title: "[Service Four]", desc: "[Describe the fourth thing you offer.]" },
+      card5: { title: "[Service Five]", desc: "[Describe the fifth thing you offer.]" },
+      card6: { title: "[Service Six]", desc: "[Describe the sixth thing you offer — feel free to add more cards if needed.]" }
     },
     contact: {
       eyebrow: "Next destination", title: "Let's Connect",
@@ -2472,8 +2243,7 @@
      "key" is the content.json path the site reads via data-edit-img.
   ========================================================================= */
   var PHOTO_SLOTS = [
-    { key: 'hero.photo', label: 'Hero photo (the top polaroid)' },
-    { key: 'about.photo', label: 'About-me photo' }
+    { key: 'hero.photo', label: 'Hero photo (the top polaroid)' }
   ];
 
   var photoGrid = document.getElementById('photo-grid');
