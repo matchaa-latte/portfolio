@@ -45,6 +45,30 @@
       "item2": "InDesign",
       "item3": "Microsoft Office",
       "item4": "Google Workspace"
+    },
+    "item1": {
+      "title": "Creativity",
+      "desc": "I express my ideas and creativity through design. I have experiences in creating publication materials, school newspapers, and other visual content."
+    },
+    "item2": {
+      "title": "Leadership & Responsibility",
+      "desc": "As a current student leader in the student council, I value leadership and responsibility. I have experiences in leading events, groups and organizations towards a common goal."
+    },
+    "item3": {
+      "title": "Teamwork & Collaboration",
+      "desc": "I collaborate with my fellow peers and advisors into achieving a common goal. I value consideration and communication for others."
+    },
+    "item4": {
+      "title": "Critical Thinking",
+      "desc": "I approach challenges logically and find a practical solution to problems that arrise."
+    },
+    "item5": {
+      "title": "Digital Literacy",
+      "desc": "I am comfortable in using digital softwares such as Canva and InDesign. I also have experience in making a website."
+    },
+    "item6": {
+      "title": "Adaptability",
+      "desc": "I can adapt to different situations and environments while learning new skills and processes quickly."
     }
   },
   "itinerary": {
@@ -83,23 +107,36 @@
     },
     "badge1": "Award One",
     "badge2": "Certification",
-    "badge3": "Milestone"
+    "badge3": "Milestone",
+    "paragraph": "I am a Grade 12 STEM student currently studying at Las Piñas City National Senior High School - Talon Dos Campus. My academic journey has been nothing but an adventure filled with joy and curiosity. Throughout my time here, I have taken on various opportunities to showcase my skills while maintaining academic excellence and earning honors. These experiences have helped me build confidence, strengthen my commitment, and continuously develop my skills. Currently, I serve as a Public Information Officer in the Student Council and as the Layout Head of The Leap/The Claw, our school publication.\n\nBefore senior high school, I studied at Equitable Village National High School, where I was also a consistent honor student. Each step of my academic journey has shaped me into someone who is eager to learn, take on challenges, and make the most of every opportunity."
   },
   "services": {
     "eyebrow": "In-flight services",
     "title": "What I Can Do for You",
     "sub": "A few of the ways I can help — swap these for the services or strengths you offer.",
     "card1": {
-      "title": "[Service One]",
-      "desc": "[Describe the first thing you offer — a skill, service, or value you bring to a team or client.]"
+      "title": "Take Initiative",
+      "desc": "I take the initiative to get things started, take on responsibilities, and contribute ideas when opportunities arise."
     },
     "card2": {
-      "title": "[Service Two]",
-      "desc": "[Describe the second thing you offer, keeping it short and outcome-focused.]"
+      "title": "Be a Team Player",
+      "desc": "I work well with others, communicate openly, and contribute to a positive and productive team environment."
     },
     "card3": {
-      "title": "[Service Three]",
-      "desc": "[Describe the third thing you offer — feel free to add more cards if needed.]"
+      "title": "Find Solutions to Basic Problems",
+      "desc": "I approach challenges logically and look for practical solutions to keep tasks moving forward.\n"
+    },
+    "card4": {
+      "title": "Adapt to any Circumstance",
+      "desc": "I can adjust to changing situations, learn new things quickly, and remain open to different approaches.\n"
+    },
+    "card5": {
+      "title": "Make Digital Works",
+      "desc": "I can create digital materials such as publication layouts, graphics, presentations, and websites using various digital tools.\n"
+    },
+    "card6": {
+      "title": "Provide Support & Encouragement",
+      "desc": "I support those I work with by offering assistance, encouragement, and a willingness to help whenever needed.\n"
     }
   },
   "about": {
