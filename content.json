@@ -172,8 +172,8 @@
       "href": "tel:+639956804166"
     },
     "address": {
-      "label": "Las Piñas City, Metro Manila",
-      "value": "[City, Province, Philippines]"
+      "label": "Address",
+      "value": "Las Piñas City, Metro Manila"
     }
   },
   "footer": {
